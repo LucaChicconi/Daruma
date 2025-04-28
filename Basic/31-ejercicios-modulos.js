@@ -20,7 +20,7 @@ console.log(mult(2,3))
 // 7. Exporta una función, una constante y una clase por defecto (en caso de que lo permita)
 
 // 8. Importa una función, una constante y una clase por defecto (en caso de que lo permita)
-
+ 
 // 9. Exporta una función, una constante y una clase desde una carpeta
 
 // 10. Importa una función, una constante y una clase desde un directorio diferente al anterior
