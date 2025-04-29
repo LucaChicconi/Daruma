@@ -83,3 +83,92 @@ let unsorted = [2,5,12,1,7]
 
 let sorted = unsorted.sort((a,b)=> a - b) 
 console.log(sorted)
+// un sort por defecto se va a aplicar a strings
+
+// reverse
+
+console.log(sorted.reverse())  // En sort creaba un nuevo array, reverse trabaja inplace
+sorted.reverse()
+// - Búsqueda en arrays
+// includes
+console.log(sorted.includes(3))
+console.log(sorted.includes(5))
+
+// find   (ésto devuelve el índice? del primer elemento que me cumple tal condición)
+
+// o devuelve el primer elemento
+
+console.log(sorted.find(element => element % 2 == 0))
+
+// actually findIndex es el que devuelve el índice 
+
+let firstEvenIndex = sorted.findIndex(element => element % 2 == 0)
+console.log(firstEvenIndex)
+
+
+// Sets avanzados 
+
+//- Operaciones
+const numbersArray = [1,2,2,3,4,5,6,6]
+const numbersSet = new Set(numbersArray)
+
+console.log(numbersSet)
+
+// Y si en vez de crear un set quiero simplemente eliminar duplicados y
+// conservar el array?
+
+// operador ... al rescate
+
+const numberSet = [...new Set(numbersArray)]
+console.log(numberSet)
+
+// Unión
+
+const setA = new Set([1,2,3])
+const setB = new Set([2,3,4,5])
+const union = new Set([...setA,...setB]) // el spread es clave
+console.log(union) 
+
+const intersec  = new Set([...setA].filter(element => setB.has(element)))
+console.log(intersec)
+
+// Diferencia
+
+const difference = new Set([...setA].filter(element=>!setB.has(element)))
+console.log(difference)
+
+// Conversión
+
+console.log([...setA])
+
+// operaciones de iteración
+
+//   forEach
+
+setA.forEach(element => console.log(element))
+
+// maps avanzados
+
+let myMap = new Map ([
+    ["name","Mouredev"],
+    ["age",37]
+])
+
+myMap.forEach((value,key)=> console.log(`${key}: ${value}`)) // Ojo que en maps el primer parámetro de forEach es el valor, no la clave
+
+
+// Mapa a Array
+
+const arrayFromMap = Array.from(myMap)
+console.log(arrayFromMap)
+
+// Mapa a diccionario
+
+const objectFromMap = Object.fromEntries(myMap)
+
+console.log(objectFromMap) // damn
+
+// Objeto a Map 
+
+const mapFromObject = new Map (Object.entries(objectFromMap))
+console.log(mapFromObject)
