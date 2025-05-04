@@ -167,7 +167,7 @@ getClima("Buenos Aires")  // La API aún no está autorizada :(
 // PokéAPI
 
 async function getPokemon(pokemon){
-    const apiKey = "62436f208655cbbdad182d746636730b" // Es una re buena práctica pushear ésto a un repo público
+    const apiKey = "" // Es una re buena práctica pushear ésto a un repo público
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
     try{
     const response  = await fetch(url)
