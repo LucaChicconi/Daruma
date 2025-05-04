@@ -131,7 +131,7 @@ patchPost()
 // OpenWeathermap.org 
 
 async function getClima(city){
-    const apiKey = "" // Es una re buena práctica pushear ésto a un repo público
+    const apiKey = "a" // Es una re buena práctica pushear ésto a un repo público
     const url = `http://maps.openweathermap.org/maps/2.0/weather?q=${city}&appid=${apiKey}`
     try{
         const newPost = {  // Creamos el nuevo objeto con lo que vamos a postear

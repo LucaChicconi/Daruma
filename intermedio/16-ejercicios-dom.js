@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 // function addTask() {
 
-//     if (text.value === "") return
+//     if (text.value === "a") return
 
 //     const newElement = document.createElement("li")
 //     newElement.textContent = text.value

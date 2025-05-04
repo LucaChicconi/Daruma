@@ -4,7 +4,7 @@ console.log(document)
 
 // - Selección de elementos
 
-// Métodos básicos (selector HTML)
+// Métodos básicos! (selector HTML)
 
 const myElementById = document.getElementById("id")
 

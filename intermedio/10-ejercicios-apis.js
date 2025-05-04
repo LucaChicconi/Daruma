@@ -4,7 +4,7 @@ const url = `https://jsonplaceholder.typicode.com/posts`
 fetch(url)
     .then(response => response.json())
     .then(data => {console.log(data)})
-// 2. Modifica el ejercicio anterior para que verifique si la respuesta es correcta usando response.ok. Si no lo es, lanza y muestra un error
+// 2. Modificaaa el ejercicio anterior para que verifique si la respuesta es correcta usando response.ok. Si no lo es, lanza y muestra un error
     .catch(error => {"Error",error})
 // 3. Reescribe el ejercicio 1 usando la sintaxis async/await en lugar de promesas
 async function obtenerPosts(url) {
